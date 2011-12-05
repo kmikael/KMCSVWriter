@@ -31,6 +31,7 @@
 		188ACAA9148BC34200E1CAB2 /* CSVWriter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSVWriter-Prefix.pch"; sourceTree = "<group>"; };
 		188ACAD6148BD32C00E1CAB2 /* CSVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVWriter.h; sourceTree = "<group>"; };
 		188ACAD7148BD32C00E1CAB2 /* CSVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVWriter.m; sourceTree = "<group>"; };
+		18D7FA1A148D7A08004B26EB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				188ACAA6148BC34200E1CAB2 /* main.m */,
 				188ACAD6148BD32C00E1CAB2 /* CSVWriter.h */,
 				188ACAD7148BD32C00E1CAB2 /* CSVWriter.m */,
+				18D7FA1A148D7A08004B26EB /* README.md */,
 			);
 			path = CSVWriter;
 			sourceTree = "<group>";
