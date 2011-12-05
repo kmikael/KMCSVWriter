@@ -4,14 +4,14 @@
 @interface CSVWriter ()
 
 @property (strong, nonatomic) NSMutableString *cSVString;
-@property (strong, nonatomic) NSString *seperator;
+@property (strong, nonatomic) NSString *separator;
 @property (nonatomic) NSUInteger columnCount;
 
 @end
 
 @implementation CSVWriter
 
-@synthesize seperator = _seperator, cSVString = _cSVString, columnCount = _columnCount;
+@synthesize separator = _separator, cSVString = _cSVString, columnCount = _columnCount;
 
 - (BOOL)writeToFile:(NSString *)path atomically:(BOOL)useAuxiliaryFile encoding:(NSStringEncoding)enc error:(NSError **)error
 {
@@ -29,21 +29,21 @@
         @throw [NSException exceptionWithName:@"WrongColCount" reason:@"Inconsistent number of columns." userInfo:nil];
     }
     
-    NSString *newRow = [row componentsJoinedByString:self.seperator];
+    NSString *newRow = [row componentsJoinedByString:self.separator];
     [self.cSVString appendString:@"\n"];
     [self.cSVString appendString:newRow];
 }
 
-- (id)initWithHeaders:(NSArray *)headers seperator:(NSString *)seperator
+- (id)initWithHeaders:(NSArray *)headers separator:(NSString *)separator
 {
     self = [super init];
     if (self) {
-        _seperator = seperator;
+        _separator = separator;
         _cSVString = [[NSMutableString alloc] init];
         _columnCount = 0;
         if (headers != nil && [headers count] != 0) {
             _columnCount = [headers count];
-            NSString *headerRow = [headers componentsJoinedByString:self.seperator];
+            NSString *headerRow = [headers componentsJoinedByString:self.separator];
             [_cSVString appendString:headerRow];
         }
     }
@@ -52,13 +52,13 @@
 
 - (id)initWithHeaders:(NSArray *)headers
 {
-    self = [self initWithHeaders:headers seperator:@","];
+    self = [self initWithHeaders:headers separator:@","];
     return self;
 }
 
 - (id)init
 {
-    self = [self initWithHeaders:nil seperator:@","];
+    self = [self initWithHeaders:nil separator:@","];
     return self;
 }
 

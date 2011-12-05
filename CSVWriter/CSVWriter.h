@@ -4,9 +4,9 @@
 @interface CSVWriter : NSObject
 
 // This is the designated initializer.
-// It takes an array of header-values and the character to seperate the values of the csv-file.
+// It takes an array of header-values and the character to separate the values of the csv-file.
 
-- (id)initWithHeaders:(NSArray *)headers seperator:(NSString *)seperator;
+- (id)initWithHeaders:(NSArray *)headers separator:(NSString *)separator;
 
 // The seperator defaults to ",".
 
