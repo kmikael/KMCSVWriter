@@ -9,7 +9,7 @@ int main (int argc, const char * argv[])
     @autoreleasepool {
         
         NSArray *headers = [NSArray arrayWithObjects:@"First Name", @"Last Name", @"ID Number", nil];
-        CSVWriter *writer = [[CSVWriter alloc] initWithHeaders:headers];
+        CSVWriter *writer = [[CSVWriter alloc] initWithHeaders:headers seperator:@";"];
         
         NSArray *aRow = [NSArray arrayWithObjects:@"Mikael", @"Konutgan", @"312", nil];
         NSArray *anotherRow = [NSArray arrayWithObjects:@"Dorothea", @"Hoermann", @"697", nil];

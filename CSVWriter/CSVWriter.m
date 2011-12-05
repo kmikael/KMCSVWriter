@@ -34,11 +34,11 @@
     [self.cSVString appendString:newRow];
 }
 
-- (id)initWithHeaders:(NSArray *)headers
+- (id)initWithHeaders:(NSArray *)headers seperator:(NSString *)seperator
 {
     self = [super init];
     if (self) {
-        _seperator = @",";
+        _seperator = seperator;
         _cSVString = [[NSMutableString alloc] init];
         _columnCount = 0;
         if (headers != nil && [headers count] != 0) {
@@ -50,9 +50,15 @@
     return self;
 }
 
+- (id)initWithHeaders:(NSArray *)headers
+{
+    self = [self initWithHeaders:headers seperator:@","];
+    return self;
+}
+
 - (id)init
 {
-    self = [self initWithHeaders:nil];
+    self = [self initWithHeaders:nil seperator:@","];
     return self;
 }
 
