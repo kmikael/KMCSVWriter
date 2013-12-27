@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6402E626186DABAF00AB2BBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6402E625186DABAF00AB2BBA /* Foundation.framework */; };
+		6402E628186DABAF00AB2BBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6402E627186DABAF00AB2BBA /* CoreGraphics.framework */; };
+		6402E62A186DABAF00AB2BBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6402E629186DABAF00AB2BBA /* UIKit.framework */; };
+		6402E630186DABAF00AB2BBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6402E62E186DABAF00AB2BBA /* InfoPlist.strings */; };
+		6402E632186DABAF00AB2BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6402E631186DABAF00AB2BBA /* main.m */; };
+		6402E636186DABAF00AB2BBA /* KMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6402E635186DABAF00AB2BBA /* KMAppDelegate.m */; };
+		6402E639186DABAF00AB2BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6402E637186DABAF00AB2BBA /* Main.storyboard */; };
+		6402E63C186DABAF00AB2BBA /* KMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6402E63B186DABAF00AB2BBA /* KMViewController.m */; };
+		6402E63E186DABAF00AB2BBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6402E63D186DABAF00AB2BBA /* Images.xcassets */; };
+		6402E645186DABAF00AB2BBA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6402E644186DABAF00AB2BBA /* XCTest.framework */; };
+		6402E646186DABAF00AB2BBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6402E625186DABAF00AB2BBA /* Foundation.framework */; };
+		6402E647186DABAF00AB2BBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6402E629186DABAF00AB2BBA /* UIKit.framework */; };
+		6402E64F186DABAF00AB2BBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6402E64D186DABAF00AB2BBA /* InfoPlist.strings */; };
+		6402E651186DABAF00AB2BBA /* KMCSVWriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6402E650186DABAF00AB2BBA /* KMCSVWriterTests.m */; };
+		6402E65C186DABCE00AB2BBA /* KMCSVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6402E65B186DABCE00AB2BBA /* KMCSVWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6402E648186DABAF00AB2BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6402E61A186DABAF00AB2BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6402E621186DABAF00AB2BBA;
+			remoteInfo = KMCSVWriter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6402E622186DABAF00AB2BBA /* KMCSVWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMCSVWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6402E625186DABAF00AB2BBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6402E627186DABAF00AB2BBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6402E629186DABAF00AB2BBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6402E62D186DABAF00AB2BBA /* KMCSVWriter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMCSVWriter-Info.plist"; sourceTree = "<group>"; };
+		6402E62F186DABAF00AB2BBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6402E631186DABAF00AB2BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6402E633186DABAF00AB2BBA /* KMCSVWriter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KMCSVWriter-Prefix.pch"; sourceTree = "<group>"; };
+		6402E634186DABAF00AB2BBA /* KMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMAppDelegate.h; sourceTree = "<group>"; };
+		6402E635186DABAF00AB2BBA /* KMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMAppDelegate.m; sourceTree = "<group>"; };
+		6402E638186DABAF00AB2BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6402E63A186DABAF00AB2BBA /* KMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMViewController.h; sourceTree = "<group>"; };
+		6402E63B186DABAF00AB2BBA /* KMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMViewController.m; sourceTree = "<group>"; };
+		6402E63D186DABAF00AB2BBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6402E643186DABAF00AB2BBA /* KMCSVWriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMCSVWriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6402E644186DABAF00AB2BBA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6402E64C186DABAF00AB2BBA /* KMCSVWriterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMCSVWriterTests-Info.plist"; sourceTree = "<group>"; };
+		6402E64E186DABAF00AB2BBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6402E650186DABAF00AB2BBA /* KMCSVWriterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMCSVWriterTests.m; sourceTree = "<group>"; };
+		6402E65A186DABCE00AB2BBA /* KMCSVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMCSVWriter.h; path = KMCSVWriter/KMCSVWriter.h; sourceTree = "<group>"; };
+		6402E65B186DABCE00AB2BBA /* KMCSVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMCSVWriter.m; path = KMCSVWriter/KMCSVWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6402E61F186DABAF00AB2BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6402E628186DABAF00AB2BBA /* CoreGraphics.framework in Frameworks */,
+				6402E62A186DABAF00AB2BBA /* UIKit.framework in Frameworks */,
+				6402E626186DABAF00AB2BBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6402E640186DABAF00AB2BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6402E645186DABAF00AB2BBA /* XCTest.framework in Frameworks */,
+				6402E647186DABAF00AB2BBA /* UIKit.framework in Frameworks */,
+				6402E646186DABAF00AB2BBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6402E619186DABAF00AB2BBA = {
+			isa = PBXGroup;
+			children = (
+				6402E62B186DABAF00AB2BBA /* KMCSVWriter */,
+				6402E64A186DABAF00AB2BBA /* KMCSVWriterTests */,
+				6402E624186DABAF00AB2BBA /* Frameworks */,
+				6402E623186DABAF00AB2BBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6402E623186DABAF00AB2BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6402E622186DABAF00AB2BBA /* KMCSVWriter.app */,
+				6402E643186DABAF00AB2BBA /* KMCSVWriterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6402E624186DABAF00AB2BBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6402E625186DABAF00AB2BBA /* Foundation.framework */,
+				6402E627186DABAF00AB2BBA /* CoreGraphics.framework */,
+				6402E629186DABAF00AB2BBA /* UIKit.framework */,
+				6402E644186DABAF00AB2BBA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6402E62B186DABAF00AB2BBA /* KMCSVWriter */ = {
+			isa = PBXGroup;
+			children = (
+				6402E634186DABAF00AB2BBA /* KMAppDelegate.h */,
+				6402E635186DABAF00AB2BBA /* KMAppDelegate.m */,
+				6402E637186DABAF00AB2BBA /* Main.storyboard */,
+				6402E63A186DABAF00AB2BBA /* KMViewController.h */,
+				6402E63B186DABAF00AB2BBA /* KMViewController.m */,
+				6402E65D186DABE200AB2BBA /* KMCSVWriter */,
+				6402E63D186DABAF00AB2BBA /* Images.xcassets */,
+				6402E62C186DABAF00AB2BBA /* Supporting Files */,
+			);
+			path = KMCSVWriter;
+			sourceTree = "<group>";
+		};
+		6402E62C186DABAF00AB2BBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6402E62D186DABAF00AB2BBA /* KMCSVWriter-Info.plist */,
+				6402E62E186DABAF00AB2BBA /* InfoPlist.strings */,
+				6402E631186DABAF00AB2BBA /* main.m */,
+				6402E633186DABAF00AB2BBA /* KMCSVWriter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6402E64A186DABAF00AB2BBA /* KMCSVWriterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6402E650186DABAF00AB2BBA /* KMCSVWriterTests.m */,
+				6402E64B186DABAF00AB2BBA /* Supporting Files */,
+			);
+			path = KMCSVWriterTests;
+			sourceTree = "<group>";
+		};
+		6402E64B186DABAF00AB2BBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6402E64C186DABAF00AB2BBA /* KMCSVWriterTests-Info.plist */,
+				6402E64D186DABAF00AB2BBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6402E65D186DABE200AB2BBA /* KMCSVWriter */ = {
+			isa = PBXGroup;
+			children = (
+				6402E65A186DABCE00AB2BBA /* KMCSVWriter.h */,
+				6402E65B186DABCE00AB2BBA /* KMCSVWriter.m */,
+			);
+			name = KMCSVWriter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6402E621186DABAF00AB2BBA /* KMCSVWriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6402E654186DABAF00AB2BBA /* Build configuration list for PBXNativeTarget "KMCSVWriter" */;
+			buildPhases = (
+				6402E61E186DABAF00AB2BBA /* Sources */,
+				6402E61F186DABAF00AB2BBA /* Frameworks */,
+				6402E620186DABAF00AB2BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMCSVWriter;
+			productName = KMCSVWriter;
+			productReference = 6402E622186DABAF00AB2BBA /* KMCSVWriter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6402E642186DABAF00AB2BBA /* KMCSVWriterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6402E657186DABAF00AB2BBA /* Build configuration list for PBXNativeTarget "KMCSVWriterTests" */;
+			buildPhases = (
+				6402E63F186DABAF00AB2BBA /* Sources */,
+				6402E640186DABAF00AB2BBA /* Frameworks */,
+				6402E641186DABAF00AB2BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6402E649186DABAF00AB2BBA /* PBXTargetDependency */,
+			);
+			name = KMCSVWriterTests;
+			productName = KMCSVWriterTests;
+			productReference = 6402E643186DABAF00AB2BBA /* KMCSVWriterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6402E61A186DABAF00AB2BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mikael Konutgan";
+				TargetAttributes = {
+					6402E642186DABAF00AB2BBA = {
+						TestTargetID = 6402E621186DABAF00AB2BBA;
+					};
+				};
+			};
+			buildConfigurationList = 6402E61D186DABAF00AB2BBA /* Build configuration list for PBXProject "KMCSVWriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6402E619186DABAF00AB2BBA;
+			productRefGroup = 6402E623186DABAF00AB2BBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6402E621186DABAF00AB2BBA /* KMCSVWriter */,
+				6402E642186DABAF00AB2BBA /* KMCSVWriterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6402E620186DABAF00AB2BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6402E63E186DABAF00AB2BBA /* Images.xcassets in Resources */,
+				6402E630186DABAF00AB2BBA /* InfoPlist.strings in Resources */,
+				6402E639186DABAF00AB2BBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6402E641186DABAF00AB2BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6402E64F186DABAF00AB2BBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6402E61E186DABAF00AB2BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6402E63C186DABAF00AB2BBA /* KMViewController.m in Sources */,
+				6402E65C186DABCE00AB2BBA /* KMCSVWriter.m in Sources */,
+				6402E636186DABAF00AB2BBA /* KMAppDelegate.m in Sources */,
+				6402E632186DABAF00AB2BBA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6402E63F186DABAF00AB2BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6402E651186DABAF00AB2BBA /* KMCSVWriterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6402E649186DABAF00AB2BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6402E621186DABAF00AB2BBA /* KMCSVWriter */;
+			targetProxy = 6402E648186DABAF00AB2BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6402E62E186DABAF00AB2BBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6402E62F186DABAF00AB2BBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6402E637186DABAF00AB2BBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6402E638186DABAF00AB2BBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6402E64D186DABAF00AB2BBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6402E64E186DABAF00AB2BBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6402E652186DABAF00AB2BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6402E653186DABAF00AB2BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6402E655186DABAF00AB2BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMCSVWriter/KMCSVWriter-Prefix.pch";
+				INFOPLIST_FILE = "KMCSVWriter/KMCSVWriter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6402E656186DABAF00AB2BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMCSVWriter/KMCSVWriter-Prefix.pch";
+				INFOPLIST_FILE = "KMCSVWriter/KMCSVWriter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6402E658186DABAF00AB2BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KMCSVWriter.app/KMCSVWriter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMCSVWriter/KMCSVWriter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KMCSVWriterTests/KMCSVWriterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6402E659186DABAF00AB2BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KMCSVWriter.app/KMCSVWriter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMCSVWriter/KMCSVWriter-Prefix.pch";
+				INFOPLIST_FILE = "KMCSVWriterTests/KMCSVWriterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6402E61D186DABAF00AB2BBA /* Build configuration list for PBXProject "KMCSVWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6402E652186DABAF00AB2BBA /* Debug */,
+				6402E653186DABAF00AB2BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6402E654186DABAF00AB2BBA /* Build configuration list for PBXNativeTarget "KMCSVWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6402E655186DABAF00AB2BBA /* Debug */,
+				6402E656186DABAF00AB2BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6402E657186DABAF00AB2BBA /* Build configuration list for PBXNativeTarget "KMCSVWriterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6402E658186DABAF00AB2BBA /* Debug */,
+				6402E659186DABAF00AB2BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6402E61A186DABAF00AB2BBA /* Project object */;
+}

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CSVWriter.xcodeproj">
+      location = "self:KMCSVWriter.xcodeproj">
    </FileRef>
 </Workspace>
