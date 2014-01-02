@@ -7,6 +7,7 @@
 //
 
 #import "KMViewController.h"
+#import "KMCSVWriter.h"
 
 @interface KMViewController ()
 
@@ -17,13 +18,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *headers = [NSArray arrayWithObjects:@"First Name", @"Last Name", @"ID", nil];
+    KMCSVWriter *CSVWriter = [[KMCSVWriter alloc] initWithHeaders:headers separator:@";"];
+    
+    NSArray *aRow = [NSArray arrayWithObjects:@"Mikael", @"Konutgan", @"312", nil];
+    NSArray *anotherRow = [NSArray arrayWithObjects:@"Dorothea", @"Hörmann", @"697", nil];
+    
+    [CSVWriter appendCSVRow:aRow];
+    [CSVWriter appendCSVRow:anotherRow];
+    
+    NSURL *URL = [[[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"test"] URLByAppendingPathExtension:@"csv"];
+    NSError *error;
+    
+    [CSVWriter writeToURL:URL atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    
+    if (error) {
+        NSLog(@"Failed to write csv file %@", error);
+    } else {
+        NSLog(@"Success writing csv to file");
+        
+        NSAssert([[NSFileManager defaultManager] fileExistsAtPath:[URL path]], @"The CSV file should exist.");
+    }
 }
 
-- (void)didReceiveMemoryWarning
+- (NSURL *)applicationDocumentsDirectory
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
 }
 
 @end
